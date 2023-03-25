@@ -11,6 +11,9 @@
   .team-list {
     flex-direction: row;
     column-gap: 24px;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
   }
 
   .team-item {

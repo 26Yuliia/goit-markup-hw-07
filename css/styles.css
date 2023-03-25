@@ -80,7 +80,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -332,8 +332,7 @@ img {
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  max-width: 264px;
-  /*display: block;*/
+  width: 264px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -347,9 +346,6 @@ img {
   row-gap: 72px;
 }
 
-.team-list-item:not(:last-child) {
-  margin-right: 24px;
-}
 .team-subtitle {
   background-color: var(--background-color);
   font-weight: 500;

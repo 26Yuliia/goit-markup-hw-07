@@ -47,12 +47,20 @@ body {
   background-color: var(--background-color);
   margin: 0 auto;
 }
-
+/*---- Загальний контейнер--*/
 .container {
-  width: 1158px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+
+/*--------Контейнер адаптив--------*/
+@media screen and (min-width: 480px) {
+  .comtainer {
+    width: 426px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* колір основного тексту #434455*/
@@ -300,9 +308,10 @@ img {
 /*Team*/
 .team {
   background-color: var(--primare-background-color);
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -323,8 +332,8 @@ img {
   background: var(--background-color);
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
-  flex-basis: calc((100% - 72px) / 4);
   text-align: center;
+  width: 100%;
 }
 .team-list {
   display: flex;

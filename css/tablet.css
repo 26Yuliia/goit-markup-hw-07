@@ -3,38 +3,17 @@
     max-width: 768px;
   }
 
-  /*.team {
+  .team {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-  .team-item {
-  }
-  .team-item:nth-child(-n + 4) {
-    margin-bottom: 64px;
-  }
+
   .team-list {
-    flex-wrap: wrap;
-    text-align: center;
+    flex-direction: row;
+    column-gap: 24px;
   }
 
-  .team-list-item:not(:last-child) {
-    margin-right: 24px;
+  .team-item {
+    width: calc((100% - 24px) / 2);
   }
-  .team-list + .team-item:not(:nth-child(2n + 1)) {
-    margin-left: 24px;
-    margin-right: auto;
-  }
-
-  .team-list + .team-item:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 64px;
-  }
-
-  .team-list + .team-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }
-
-  .team-list + .team-item:nth-child(2n + 1) {
-    margin-right: 0;
-    margin-left: auto;
-  }*/
 }

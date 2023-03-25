@@ -1,10 +1,40 @@
 @media screen and (min-width: 768px) {
   .comtainer {
-    max-width: 766px;
+    max-width: 768px;
   }
 
-  .team {
+  /*.team {
     padding-top: 96px;
     padding-bottom: 96px;
   }
+  .team-item {
+  }
+  .team-item:nth-child(-n + 4) {
+    margin-bottom: 64px;
+  }
+  .team-list {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .team-list-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .team-list + .team-item:not(:nth-child(2n + 1)) {
+    margin-left: 24px;
+    margin-right: auto;
+  }
+
+  .team-list + .team-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 64px;
+  }
+
+  .team-list + .team-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .team-list + .team-item:nth-child(2n + 1) {
+    margin-right: 0;
+    margin-left: auto;
+  }*/
 }

@@ -276,34 +276,6 @@ img {
 
 /*article*/
 
-.article {
-  padding-bottom: 120px;
-}
-
-.article-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--title-text-color);
-  text-align: center;
-  list-style: none;
-  margin-bottom: 72px;
-}
-
-.article-list {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-}
-
-.article-item {
-  width: calc(100% - 360px);
-  display: block;
-  list-style: none;
-}
-
 /*Team*/
 .team {
   background-color: var(--primare-background-color);

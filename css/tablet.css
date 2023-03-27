@@ -3,6 +3,22 @@
     max-width: 768px;
   }
 
+  .advantages {
+    padding: 96px 16px;
+  }
+
+  .advantages-list {
+    flex-wrap: wrap;
+  }
+  .advantages-item {
+    width: calc((100% - 24px) / 2);
+    margin-top: 0;
+    margin-right: auto;
+    text-align: left;
+  }
+  .advantages-text {
+    text-align: left;
+  }
   .team {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -12,11 +28,17 @@
     flex-direction: row;
     column-gap: 24px;
     flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
   }
 
   .team-item {
     width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (max-width: 1157px) {
+  .article-container,
+  .advantages-icon,
+  .advantages-box {
+    display: none;
   }
 }

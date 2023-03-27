@@ -2,7 +2,50 @@
   .comtainer {
     max-width: 1158px;
   }
+  .advantages {
+    padding-bottom: 120px;
+    padding-top: 120px;
+  }
 
+  .advantages-list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+  }
+
+  .advantages-title {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    display: block;
+    list-style: none;
+  }
+
+  .advantages-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    margin-top: 0;
+    max-width: 264px;
+    display: block;
+    gap: 24px;
+    list-style: none;
+  }
+
+  .advantages-box {
+    width: 264px;
+    height: 112px;
+    margin-bottom: 8px;
+    background: var(--advantages-box-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .team {
     padding-top: 120px;
     padding-bottom: 120px;

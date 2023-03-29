@@ -56,11 +56,6 @@ body {
 }
 
 /*--------Контейнер адаптив--------*/
-@media screen and (min-width: 480px) {
-  .comtainer {
-    width: 480px;
-  }
-}
 
 /* колір основного тексту #434455*/
 /* вторичний колір тексту #2E2F42*/
@@ -229,19 +224,6 @@ img {
 
 /* Advantages*/
 
-.advantages {
-  padding: 96px 16px;
-}
-
-.advantages-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: 72px;
-}
-.advantages-item {
-  width: 396px;
-}
-
 .advantages-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -266,8 +248,8 @@ img {
 }
 
 /*article*/
-@media screen and (max-width: 767px) {
-  .article-container,
+@media screen and (min-width: 767px) {
+  .article,
   .advantages-box {
     display: none;
   }
@@ -394,11 +376,6 @@ img {
 }
 
 /*-------Customers-------*/
-.customers-container {
-  padding-top: 130px;
-  padding-bottom: 120px;
-}
-
 .customer-title {
   font-weight: 700;
   font-size: 36px;
@@ -408,11 +385,6 @@ img {
   text-transform: capitalize;
   color: var(--customer-title-color);
   margin-bottom: 72px;
-}
-
-.customer-list {
-  display: flex;
-  gap: 24px;
 }
 
 .customer-link {

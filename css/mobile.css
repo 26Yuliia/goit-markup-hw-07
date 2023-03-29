@@ -1,0 +1,33 @@
+@media screen and (min-width: 480px) {
+  .comtainer {
+    width: 428px;
+  }
+  .advantages {
+    padding: 96px 16px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 72px;
+  }
+  .advantages-item {
+    width: 396px;
+  }
+  .customers-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .customer-list {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .customer-item:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .customer-item:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}

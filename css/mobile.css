@@ -5,14 +5,19 @@
   .advantages {
     padding: 96px 16px;
   }
-
+  .advantages-title {
+    text-align: center;
+  }
   .advantages-list {
     display: flex;
     flex-direction: column;
     row-gap: 72px;
   }
   .advantages-item {
-    width: 396px;
+    width: 100%;
+  }
+  .section.article {
+    display: none;
   }
   .customers-container {
     padding-top: 96px;
@@ -20,14 +25,19 @@
   }
 
   .customer-list {
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 16px;
+    justify-content: center;
   }
-  .customer-item:nth-child(2n) {
-    margin-right: 0;
+  .customer-item {
+    margin-bottom: 72px;
+    width: calc((100% - 16px) / 2);
+    height: 88px;
+    width: 190px;
   }
-
-  .customer-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+}
+@media screen and (max-width: 767px) {
+  .article-title,
+  .advantages-box {
+    display: none;
   }
 }

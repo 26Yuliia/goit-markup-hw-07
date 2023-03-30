@@ -2,35 +2,9 @@
   .comtainer {
     max-width: 1158px;
   }
-  .article {
-    padding-bottom: 120px;
-  }
-  .article-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--title-text-color);
-    text-align: center;
-    list-style: none;
-    margin-bottom: 72px;
-  }
 
-  .article-list {
-    display: flex;
-    gap: 24px;
-    list-style: none;
-  }
-
-  .article-item {
-    width: calc(100% - 360px);
-    display: block;
-    list-style: none;
-  }
   .advantages {
-    padding-bottom: 120px;
-    padding-top: 120px;
+    padding: 120px 156px;
   }
 
   .advantages-items {
@@ -48,10 +22,11 @@
     margin-bottom: 8px;
     display: block;
     list-style: none;
+    text-align: left;
   }
   .advantages-list {
-    flex-direction: row;
-    column-gap: 24px;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .advantages-text {
     font-size: 16px;
@@ -59,7 +34,7 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-top: 0;
-    max-width: 264px;
+    width: 264px;
     display: block;
     gap: 24px;
     list-style: none;
@@ -75,10 +50,11 @@
     justify-content: center;
     align-items: center;
   }
-
+  .article {
+    padding: 120px 156px;
+  }
   .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 156px;
   }
   .team-item {
     width: calc((100% - 72px) / 4);
@@ -87,9 +63,8 @@
   .team-list-item:not(:last-child) {
     margin-right: 24px;
   }
-  .customers-container {
-    padding-top: 130px;
-    padding-bottom: 120px;
+  .customers {
+    padding: 120px 156px;
   }
 
   .customer-title {

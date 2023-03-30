@@ -55,8 +55,6 @@ body {
   margin: 0 auto;
 }
 
-/*--------Контейнер адаптив--------*/
-
 /* колір основного тексту #434455*/
 /* вторичний колір тексту #2E2F42*/
 /* колір акцент #4d5ae5*/
@@ -234,7 +232,6 @@ img {
   margin-bottom: 8px;
   display: block;
   list-style: none;
-  text-align: center;
 }
 
 .advantages-text {
@@ -248,14 +245,8 @@ img {
 }
 
 /*article*/
-@media screen and (min-width: 767px) {
-  .article,
-  .advantages-box {
-    display: none;
-  }
-}
+
 .article {
-  display: none;
   padding-bottom: 120px;
 }
 .article-title {
@@ -301,7 +292,7 @@ img {
 
 .team-img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .team-item {
@@ -309,7 +300,6 @@ img {
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-  width: 264px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -336,6 +326,7 @@ img {
 
 .team-content {
   padding: 32px 16px;
+  text-align: center;
 }
 
 .team-text {
@@ -345,6 +336,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   margin-top: 0;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -366,13 +358,14 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: center;
   gap: 24px;
-  margin-top: 8px;
+  justify-content: center;
 }
 .social-item {
+  display: block;
 }
-.social-media-icon {
+.social-list-item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /*-------Customers-------*/
@@ -386,9 +379,20 @@ img {
   color: var(--customer-title-color);
   margin-bottom: 72px;
 }
-
+.customer-item {
+  margin-bottom: 0;
+}
+.customer-item:last-child {
+  margin-right: 0;
+}
+.customer-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+}
 .customer-link {
-  width: 168px;
+  width: 190px;
   height: 88px;
   color: var(--customer-color);
   border: 1px solid var(--customer-color);

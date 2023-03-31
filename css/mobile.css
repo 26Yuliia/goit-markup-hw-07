@@ -2,8 +2,20 @@
   .comtainer {
     width: 428px;
   }
-  .advantages {
-    padding: 96px 16px;
+  .hero-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--secondary-font-color);
+    width: 320px;
+  }
+  .hero {
+    padding: 112px 56px;
+  }
+  .advantages-container {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .advantages-title {
     text-align: center;
@@ -11,32 +23,82 @@
   .advantages-list {
     display: flex;
     flex-direction: column;
-    row-gap: 72px;
   }
   .advantages-item {
-    width: 100%;
+    margin-bottom: 72px;
   }
-  .section.article {
-    display: none;
+  .advantages-item:last-child {
+    margin-bottom: 0;
   }
   .customers-container {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding: 96px 0;
   }
 
   .customer-list {
-    padding-right: 16px;
+    /*width: 404px;*/
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 72px;
     justify-content: center;
   }
   .customer-item {
-    margin-bottom: 72px;
-    width: calc((100% - 16px) / 2);
+    margin-bottom: 0px;
+    flex-basis: calc((100% - 16px) / 2);
+  }
+  .customer-item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .customer-link {
     height: 88px;
     width: 190px;
   }
+  .team-container {
+    padding: 96px 0;
+  }
+
+  /* Background image */
+
+  @media (min-device-pixel-ratio: 1),
+    (-webkit-min-device-pixel-ratio: 1),
+    (-o-min-device-pixel-ratio: 1/1),
+    (min-resolution: 96dpi),
+    (min-resolution: 1dppx) {
+    .section.hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-mobile-1x.jpg);
+      background-color: var(--background-hero-color);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section.hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-mobile-2x.jpg);
+      background-color: var(--background-hero-color);
+    }
+  }
 }
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 1158px) {
+  .article,
   .article-title,
+  .article-list,
   .advantages-box {
     display: none;
   }

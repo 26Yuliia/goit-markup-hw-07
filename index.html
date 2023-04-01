@@ -27,6 +27,7 @@
           <a href="./index.html" class="header-logo">
             Web<span class="header-subject">Studio</span></a
           >
+
           <ul class="header-list list">
             <li class="header-item">
               <a href="" class="header-link link active">Studio</a>
@@ -54,6 +55,11 @@
               </li>
             </ul>
           </address>
+          <button type="button" class="btn-menu-burger js-open-menu">
+            <svg class="btn-mobile" width="32" height="32">
+              <use href="./images/hambuger.svg#icon-menu-hamburger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -615,6 +621,88 @@
         </form>
       </div>
     </div>
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container">
+      <!-- Mobile menu's button close -->
+      <div class="mobile-btn-close">
+        <button type="button" class="btn-menu-close js-close-menu">
+          <svg width="8" height="8" aria-label="Mobile menu switcher">
+            <use
+              class="icon-cross"
+              href="./images/Vector.svg#icon-icon-menu"
+            ></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu's navigation -->
+      <div class="mobile-navigation">
+        <nav class="mob-nav">
+          <ul class="mob-list list">
+            <li class="chapter">
+              <a href="./index.html" class="link current">Studio</a>
+            </li>
+            <li class="chapter">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="chapter">
+              <a href="" class="link mob-menu-open">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Mobile menu's address & social -->
+      <div class="mobile-social">
+        <address class="menu-address">
+          <ul class="address-mob list">
+            <li class="chapter menu-mail">
+              <a href="mailto:info@devstudio.com" class="ping-mob"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="chapter menu-tel">
+              <a href="tel:+110001111111" class="ping-mob mobil"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
+          <ul class="mob-social-list">
+            <li class="chapter-social">
+              <a href="" class="mobile-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="chapter-social">
+              <a href="" class="mobile-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="chapter-social">
+              <a href="" class="mobile-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="../images/symbol-defs.svg.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="chapter-social">
+              <a href="" class="mobile-link">
+                <svg class="mob-social-icon" width="24" height="24">
+                  <use href="./images/symbol-defs.svg.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile.js"></script>
   </body>
 </html>

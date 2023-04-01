@@ -5,7 +5,11 @@
     margin-right: auto;
   }
 
-  .ping-mob.mobil {
+  .header-container {
+    width: 428px;
+  }
+
+  .contact-mobile.mobility {
     font-size: 26px;
   }
 
@@ -13,17 +17,24 @@
     font-size: 8px;
     letter-spacing: 0.02em;
   }
-
-  .chapter-social:not(:last-child) {
-    margin-right: 28px;
+  /* Mobile menu */
+  .mob-item {
+    margin-bottom: 40px;
   }
-  .header-nav-wrap {
-    background-color: #fff;
-    max-width: 337px;
-    width: 100%;
-    position: fixed;
-    right: 0;
-    top: 0;
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mob-list .mob-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .mobile-mail {
+    margin-bottom: 48px;
+  }
+
+  .mobile-tel {
+    margin-bottom: 40px;
   }
 
   .header-btn-mobile-close {
@@ -104,7 +115,17 @@
   .team-container {
     padding: 96px 0;
   }
+  .portfolio-container {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .content-set {
+    list-style: none;
+    display: flex;
 
+    row-gap: 48px;
+    align-items: center;
+  }
   /* Background image */
 
   @media (min-device-pixel-ratio: 1),
@@ -145,5 +166,59 @@
   .article-list,
   .advantages-box {
     display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-list,
+  .address-list {
+    display: none;
+  }
+  .header-logo {
+    margin-right: 0;
+  }
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+  .portfolio-img {
+    width: 396px;
+    height: 280px;
+  }
+  .portfolio-list {
+    margin: auto;
+    max-width: 428px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .portfolio-list .portfolio-button {
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+  .portfolio-list .portfolio-button:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+
+  .content-set {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 402px) {
+  .contact-tel {
+    font-size: 26px;
+  }
+  .mobile-social-item {
+    margin-right: 40px;
+  }
+
+  .mobile-social-item:not(:last-child) {
+    margin-right: 29px;
+  }
+  .mobile-social-item:not(:last-child) {
+    margin-right: 29px;
   }
 }

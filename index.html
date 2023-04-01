@@ -24,10 +24,23 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="header-logo">
-            Web<span class="header-subject">Studio</span></a
-          >
-
+          <div class="mobile-header">
+            <a href="./index.html" class="header-logo">
+              Web<span class="header-subject">Studio</span></a
+            >
+            <button type="button" class="btn-menu-burger js-open-menu">
+              <svg
+                class="btn-mobile"
+                width="32"
+                height="32"
+                aria-label="Mobile menu switcher"
+              >
+                <use
+                  href="./images/burger-conve-svg.svg#icon-menu-burger-converted"
+                ></use>
+              </svg>
+            </button>
+          </div>
           <ul class="header-list list">
             <li class="header-item">
               <a href="" class="header-link link active">Studio</a>
@@ -55,11 +68,6 @@
               </li>
             </ul>
           </address>
-          <button type="button" class="btn-menu-burger js-open-menu">
-            <svg class="btn-mobile" width="32" height="32">
-              <use href="./images/hambuger.svg#icon-menu-hamburger"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </header>
@@ -452,7 +460,7 @@
       <!----/Customers----->
     </main>
 
-    <!--<footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-block">
           <a href="./index.html" class="footer-logo">
@@ -520,7 +528,7 @@
           </form>
         </div>
       </div>
-    </footer>-->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -629,7 +637,7 @@
           <svg width="8" height="8" aria-label="Mobile menu switcher">
             <use
               class="icon-cross"
-              href="./images/Vector.svg#icon-icon-menu"
+              href="./images/symbol-defsVector.svg#icon-Vector"
             ></use>
           </svg>
         </button>
@@ -639,14 +647,14 @@
       <div class="mobile-navigation">
         <nav class="mob-nav">
           <ul class="mob-list list">
-            <li class="chapter">
-              <a href="./index.html" class="link current">Studio</a>
+            <li class="mob-item">
+              <a href="./index.html" class="mob-link link current">Studio</a>
             </li>
-            <li class="chapter">
-              <a href="./portfolio.html" class="link">Portfolio</a>
+            <li class="mob-item">
+              <a href="./portfolio.html" class="mob-link link">Portfolio</a>
             </li>
-            <li class="chapter">
-              <a href="" class="link mob-menu-open">Contacts</a>
+            <li class="mob-item">
+              <a href="" class="mob-link link mob-menu-open">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -656,41 +664,41 @@
       <div class="mobile-social">
         <address class="menu-address">
           <ul class="address-mob list">
-            <li class="chapter menu-mail">
-              <a href="mailto:info@devstudio.com" class="ping-mob"
+            <li class=".mobile-mail">
+              <a href="mailto:info@devstudio.com" class="contact-mobile link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="chapter menu-tel">
-              <a href="tel:+110001111111" class="ping-mob mobil"
+            <li class="mobile-tel">
+              <a href="tel:+110001111111" class="contact-tel link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
 
-          <ul class="mob-social-list">
-            <li class="chapter-social">
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-item">
               <a href="" class="mobile-link">
                 <svg class="mob-social-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="chapter-social">
+            <li class="mobile-social-item">
               <a href="" class="mobile-link">
                 <svg class="mob-social-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="chapter-social">
+            <li class="mobile-social-item">
               <a href="" class="mobile-link">
                 <svg class="mob-social-icon" width="24" height="24">
                   <use href="../images/symbol-defs.svg.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="chapter-social">
+            <li class="mobile-social-item">
               <a href="" class="mobile-link">
                 <svg class="mob-social-icon" width="24" height="24">
                   <use href="./images/symbol-defs.svg.svg#icon-linkedin"></use>
@@ -703,6 +711,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -192,15 +192,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    margin-right: auto;
-    margin-left: auto;
-    justify-content: center;
+    row-gap: 72px;
+
+    max-width: 582px;
   }
   .footer-media {
     margin-left: 0;
-    margin-top: 72px;
   }
   .footer-subscribe {
     margin-left: 0;
+  }
+  .subscribe-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 }

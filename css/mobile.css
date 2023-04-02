@@ -116,8 +116,7 @@
     padding: 96px 0;
   }
   .portfolio-container {
-    padding-top: 64px;
-    padding-bottom: 96px;
+    padding: 48px 0;
   }
   .content-set {
     list-style: none;
@@ -182,6 +181,7 @@
     justify-content: space-between;
     padding: 24px 0;
   }
+
   .portfolio-img {
     width: 396px;
     height: 280px;

@@ -372,8 +372,6 @@
   /* Background image */
 
   @media (min-device-pixel-ratio: 1),
-    (-webkit-min-device-pixel-ratio: 1),
-    (-o-min-device-pixel-ratio: 1/1),
     (min-resolution: 96dpi),
     (min-resolution: 1dppx) {
     .section.hero {
@@ -388,8 +386,6 @@
   }
 
   @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .section.hero {

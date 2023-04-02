@@ -100,14 +100,7 @@
     padding-top: 64px;
     padding-bottom: 96px;
   }
-  .content-set {
-    max-width: 736px;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
-    row-gap: 72px;
-    align-items: center;
-  }
+
   .content-item {
     margin-bottom: 0px;
     flex-basis: calc((100% - 24px) / 2);
@@ -179,6 +172,14 @@
     max-width: 552px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .content-set {
+    max-width: 736px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    align-items: center;
   }
   .btn-menu-burger {
     display: none;

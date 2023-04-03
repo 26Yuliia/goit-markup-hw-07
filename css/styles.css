@@ -84,7 +84,10 @@ img {
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .header-logo {
   font-family: "Raleway", sans-serif;
   text-decoration: none;
@@ -161,7 +164,6 @@ img {
 }
 
 /* Hero */
-
 .hero {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -173,17 +175,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--background-hero-color);
-  text-align: center;
+  max-width: 428px;
 }
-
 .hero-title {
   color: var(--secondary-font-color);
   text-align: center;
   margin: 0 auto 72px;
 }
-.hero-container {
-  padding: 112px 56px;
-}
+
 .hero-button {
   font-family: inherit;
   cursor: pointer;
@@ -243,7 +242,7 @@ img {
 .mobile-menu.is-open {
   transform: scaleY(1);
   transform-origin: top;
-  transition: transform 800ms var(--animation-function);
+  transition: transform 800ms;
   pointer-events: all;
 }
 
@@ -301,6 +300,31 @@ img {
 .address-mob .contact-tel:focus {
   color: var(--accent-color);
 }
+.mob-item:last-child {
+  margin-bottom: 0;
+}
+.mobile-contact-menu {
+  margin-bottom: 40px;
+}
+.mobile-contact-menu:first-child {
+  margin-bottom: 0;
+}
+.mob-item {
+  margin-bottom: 40px;
+}
+.mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-mobile {
+  margin-bottom: 48px;
+}
+
+.contact-tel {
+  margin-bottom: 40px;
+}
 
 .contact-mobile {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -339,28 +363,14 @@ img {
   letter-spacing: 0.02em;
   text-decoration-line: none;
 }
-.mob-item {
-  margin-bottom: 40px;
-}
-.mob-list .mob-item:not(:last-child) {
-  margin-bottom: 40px;
-}
-.mobile-mail {
-  margin-bottom: 48px;
-}
 
-.mobile-tel {
-  margin-bottom: 40px;
-}
-
-.mobile-social-item:not(:last-child) {
+/*.mobile-social-item:not(:last-child) {
   margin-right: 28px;
-}
+}*/
 /* Mobile menu's social */
 
 .mobile-social-list {
   display: flex;
-  margin-top: 48px;
   padding: 0;
 }
 
@@ -368,10 +378,6 @@ img {
   list-style: none;
   width: 40px;
   height: 40px;
-}
-
-.mobile-social-item:not(:last-child) {
-  margin-right: 56px;
 }
 
 .mobile-social-item .mobile-link {
@@ -391,10 +397,7 @@ img {
 }
 
 /* Advantages*/
-.advantages-container {
-  padding-top: 96px;
-  padding-bottom: 96px;
-}
+
 .advantages-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -456,8 +459,9 @@ img {
 .team {
   background-color: var(--primare-background-color);
 }
-.team-container {
-  padding: 96px 0;
+.team {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-title {
@@ -480,7 +484,6 @@ img {
   background: var(--background-color);
   box-shadow: var(--box-shadow);
   border-radius: 0px 0px 4px 4px;
-
   margin-left: auto;
   margin-right: auto;
 }
@@ -550,11 +553,12 @@ img {
 }
 
 /*-------Customers-------*/
-.customers-container {
-  padding: 96px 15px;
+.customers {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
 .customer-list {
-  max-width: 404px;
   margin-right: auto;
   margin-left: auto;
   display: flex;

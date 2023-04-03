@@ -38,8 +38,9 @@
     margin-right: auto;
     background-color: var(--background-hero-color);
   }
-  .hero-container {
-    padding: 188px;
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
   .hero-title {
     margin: 0 auto 48px;
@@ -52,16 +53,14 @@
     text-align: center;
   }
 
-  .advantages-container {
-    padding: 120px 0;
-    max-width: 100%;
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   .advantages-item {
-    list-style: none;
-    margin-bottom: 0;
+    width: calc((100% - 24px) / 4);
   }
   .advantages-list {
-    display: flex;
     gap: 24px;
   }
   */ .advantages-list-item:not(:last-child) {
@@ -88,9 +87,6 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
     margin-top: 0;
-    width: 264px;
-    display: block;
-    list-style: none;
   }
 
   .advantages-box {
@@ -104,12 +100,12 @@
     align-items: center;
     background-position: center;
   }
-  /*.article {
-    padding: 120px 156px;
-  }*/
-  .team-container {
-    padding: 120px 0;
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
+
   .team-item {
     width: calc((100% - 72px) / 4);
   }
@@ -117,8 +113,9 @@
   .team-list-item:not(:last-child) {
     margin-right: 24px;
   }
-  .customers-container {
-    padding: 120px 0;
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 
   .customer-title {
@@ -374,7 +371,7 @@
   @media (min-device-pixel-ratio: 1),
     (min-resolution: 96dpi),
     (min-resolution: 1dppx) {
-    .section.hero {
+    .hero {
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.7),
@@ -388,7 +385,7 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .section.hero {
+    .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)

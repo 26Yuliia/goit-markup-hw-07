@@ -23,36 +23,35 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-navigation">
-          <div class="mobile-header">
-            <a href="./index.html" class="header-logo">
-              Web<span class="header-subject">Studio</span></a
+        <div class="mobile-header">
+          <a href="./index.html" class="header-logo">
+            Web<span class="header-subject">Studio</span></a
+          >
+          <button type="button" class="btn-menu-burger js-open-menu">
+            <svg
+              class="btn-mobile"
+              width="32"
+              height="32"
+              aria-label="Mobile menu switcher"
             >
-            <button type="button" class="btn-menu-burger js-open-menu">
-              <svg
-                class="btn-mobile"
-                width="32"
-                height="32"
-                aria-label="Mobile menu switcher"
-              >
-                <use
-                  href="./images/burger-conve-svg.svg#icon-menu-burger-converted"
-                ></use>
-              </svg>
-            </button>
-          </div>
-          <ul class="header-list list">
-            <li class="header-item">
-              <a href="" class="header-link link active">Studio</a>
-            </li>
-            <li class="header-item">
-              <a href="./portfolio.html" class="header-link link">Portfolio</a>
-            </li>
-            <li class="header-item">
-              <a href="" class="header-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+              <use
+                href="./images/burger-conve-svg.svg#icon-menu-burger-converted"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a href="" class="header-link link active">Studio</a>
+          </li>
+          <li class="header-item">
+            <a href="./portfolio.html" class="header-link link">Portfolio</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link link">Contacts</a>
+          </li>
+        </ul>
+
         <div class="contact-address">
           <address class="header-address">
             <ul class="address-list list">
@@ -464,7 +463,7 @@
       <div class="container footer-container">
         <div class="footer-logo-block">
           <a href="./index.html" class="footer-logo">
-            Web <span class="footer-subject">Studio</span></a
+            Web<span class="footer-subject">Studio</span></a
           >
           <p class="footer-text">
             Increase the flow of customers and sales for your business with
@@ -648,13 +647,15 @@
         <nav class="mob-nav">
           <ul class="mob-list list">
             <li class="mob-item">
-              <a href="./index.html" class="mob-link link current">Studio</a>
+              <a href="./index.html" class="mob-link link mob-menu-open"
+                >Studio</a
+              >
             </li>
             <li class="mob-item">
               <a href="./portfolio.html" class="mob-link link">Portfolio</a>
             </li>
             <li class="mob-item">
-              <a href="" class="mob-link link mob-menu-open">Contacts</a>
+              <a href="" class="mob-link link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -664,12 +665,12 @@
       <div class="mobile-social">
         <address class="menu-address">
           <ul class="address-mob list">
-            <li class=".mobile-mail">
+            <li class="mobile-contact-menu">
               <a href="mailto:info@devstudio.com" class="contact-mobile link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="mobile-tel">
+            <li class="mobile-contact-menu">
               <a href="tel:+110001111111" class="contact-tel link"
                 >+11 (000) 111-11-11</a
               >

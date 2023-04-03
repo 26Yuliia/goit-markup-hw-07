@@ -32,12 +32,14 @@
     line-height: 1.07;
     max-width: 496px;
   }
-  .hero-container {
-    padding: 112px 136px;
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
-  .advantages-container {
-    padding: 96px 0px;
-    max-width: 726px;
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .advantages-list {
@@ -51,9 +53,7 @@
     margin-right: auto;
     text-align: left;
   }
-  .advantages-item:nth-child(n + 2) {
-    margin-bottom: 0;
-  }
+
   .advantages-title {
     text-align: left;
   }
@@ -63,23 +63,22 @@
   .section.article {
     display: none;
   }
-  .team-container {
-    padding: 96px 0;
+  .team {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .team-list {
     flex-direction: row;
     column-gap: 24px;
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
-  .team-item {
-    width: calc((100% - 24px) / 2);
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
-  .customers-container {
-    padding: 96px 0;
-  }
-
   .customer-list {
     display: flex;
     flex-wrap: wrap;
@@ -127,7 +126,7 @@
     (-o-min-device-pixel-ratio: 1/1),
     (min-resolution: 96dpi),
     (min-resolution: 1dppx) {
-    .section.hero {
+    .hero {
       background-image: linear-gradient(
           to right,
           rgba(46, 47, 66, 0.7),
@@ -143,7 +142,7 @@
     (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .section.hero {
+    .hero {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -166,6 +165,21 @@
   .advantages-icon {
     display: none;
   }
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+  .customer-list {
+    max-width: 404px;
+  }
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .advantages-list {
+    max-width: 428px;
+    margin: 0 auto;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customer-list {
@@ -183,6 +197,15 @@
   }
   .btn-menu-burger {
     display: none;
+  }
+  .team-list {
+    width: 552px;
+  }
+  .adress-link {
+    margin-bottom: 12px;
+  }
+  .adress-link:last-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
